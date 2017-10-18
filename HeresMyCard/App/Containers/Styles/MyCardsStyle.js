@@ -1,0 +1,38 @@
+import { StyleSheet } from 'react-native'
+import { ApplicationStyles, Metrics, Colors } from '../../Themes'
+
+export default StyleSheet.create({
+  ...ApplicationStyles.screen,
+  container: {
+    flex: 1,
+    // backgroundColor: Colors.background
+  },
+  backgroundImage:{
+    flex: 1,
+    width: undefined,
+    height: undefined,
+    backgroundColor:'transparent',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+  },
+  row: {
+    flex: 1,
+    backgroundColor: Colors.fire,
+    marginVertical: Metrics.smallMargin,
+    justifyContent: 'center'
+  },
+  boldLabel: {
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    color: Colors.snow,
+    textAlign: 'center',
+    marginBottom: Metrics.smallMargin
+  },
+  label: {
+    textAlign: 'center',
+    color: 'black'
+  },
+  listContent: {
+    // marginTop: Metrics.baseMargin
+  }
+})
